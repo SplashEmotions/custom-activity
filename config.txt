@@ -1,2 +1,2 @@
 [DEFAULT]
-discord_token=14j14j
+discord_token=14j14
