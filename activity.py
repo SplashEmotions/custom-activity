@@ -18,4 +18,4 @@ async def on_ready():
     await bot.change_presence(activity=activity)
     print("Активность установлена") # уведомление о установлении активности
 
-bot.run("моего тут не будет") #суда ваш токен
+bot.run("discord_token") #суда ваш токен
