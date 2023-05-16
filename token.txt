@@ -1,8 +1,0 @@
-config = configparser.ConfigParser()
-config.read('config.txt')
-
-token = config.get('DEFAULT', 'token')
-
-# твой код
-
-bot.run(token)
