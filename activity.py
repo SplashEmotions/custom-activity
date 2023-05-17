@@ -1,8 +1,14 @@
+import configparser
 from discord.ext.commands import Bot
 from discord.ext import commands
 import asyncio
 import time
 import discord
+
+config = configparser.ConfigParser()
+config.read('config.txt')
+
+discord_token = config.get('DEFAULT', 'discord_token')
 
 Client = discord.Client()
 bot = commands.Bot(command_prefix='!')
@@ -18,4 +24,4 @@ async def on_ready():
     await bot.change_presence(activity=activity)
     print("Активность установлена") # уведомление о установлении активности
 
-bot.run("discord_token") #суда ваш токен
+bot.run(discord_token) #суда ваш токен
